@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Nawaz | Systems Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0a',
+                        darker: '#050505',
+                        accent: '#10b981', 
+                        muted: '#a3a3a3'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    animation: {
+                        'infinite-scroll': 'scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;500;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #f5f5f5; overflow-x: hidden; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .aura-gradient {
+            background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter reveal-nav">HN<span class="text-accent">.</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-muted reveal-nav">
+                <a href="#vision" class="hover:text-white transition">Vision</a>
+                <a href="#trajectory" class="hover:text-white transition">Trajectory</a>
+                <a href="#projects" class="hover:text-white transition">Proprietary IP</a>
+                <a href="#stack" class="hover:text-white transition">Infrastructure</a>
+                <a href="#pursuits" class="hover:text-white transition">Pursuits</a>
+            </div>
+            <a href="#contact" class="reveal-nav px-5 py-2 text-xs font-mono border border-white/10 hover:border-accent hover:text-accent transition rounded-full">
+                Status: Fully Booked Q4
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6 reveal-hero">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full glass-panel text-xs font-mono text-accent">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                </span>
+                <span>Deploying autonomous infrastructure.</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+                I engineer <br>
+                <span class="aura-gradient">autonomous</span><br>
+                ecosystems.
+            </h1>
+            <p class="text-lg text-muted max-w-2xl leading-relaxed">
+                I specialize in translating complex quantitative logic into production-ready infrastructure. By bridging low-level systems architecture with advanced statistical processing, I design scalable platforms that execute flawlessly—from raw compute resources to the user interface.
+            </p>
+            <div class="pt-4 flex space-x-4">
+                <a href="#projects" class="px-8 py-3 bg-white text-dark font-medium rounded hover:bg-gray-200 transition">View Architecture</a>
+                <a href="https://github.com/hassananwaz" target="_blank" class="px-8 py-3 glass-panel font-medium rounded hover:border-white/30 transition">GitHub</a>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center md:justify-end reveal-hero-img">
+            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition duration-700">
+                <img src="./my-pic.jfif" alt="Hassan Nawaz" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Marquee -->
+    <div class="border-y border-white/5 bg-dark py-6 overflow-hidden relative flex">
+        <div class="animate-infinite-scroll flex whitespace-nowrap opacity-40 grayscale text-xl font-bold tracking-widest text-white">
+            <span class="mx-8">AWS EC2/S3</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">GOOGLE CLOUD</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">LLM ORCHESTRATION</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">POWER BI</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">TENSORFLOW</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">REACT / NEXT.JS</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">THREE.JS / WEBGL</span>
+            <span class="mx-8">•</span>
+            <!-- Duplicate for loop -->
+            <span class="mx-8">AWS EC2/S3</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">GOOGLE CLOUD</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">LLM ORCHESTRATION</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">POWER BI</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">TENSORFLOW</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">REACT / NEXT.JS</span>
+            <span class="mx-8">•</span>
+            <span class="mx-8">THREE.JS / WEBGL</span>
+            <span class="mx-8">•</span>
+        </div>
+    </div>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-24 bg-darker reveal-section">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <h2 class="text-3xl font-bold">Everything is a lesson.</h2>
+            <p class="text-muted text-lg leading-relaxed text-left md:text-center">
+                Last month, my multi-agent AI architecture throttled a local server deployment at 3 AM. Most would call it a failure. I realized it was a masterclass in distributed system resilience. Crossing one million automated data points is exhausting, but building scalable data pipelines requires an uncomfortable level of obsession. I don't get dopamine from metrics anymore; I get it from flawless execution.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+<section id="trajectory" class="py-24 px-6 max-w-4xl mx-auto reveal-section">
+        <h2 class="text-3xl font-bold mb-12">Trajectory <span class="text-muted font-normal text-lg ml-2">(Architecture & Academics)</span></h2>
+        <div class="space-y-8 border-l border-white/10 ml-3 pl-8 relative">
+            
+            <div class="relative group">
+                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darker bg-accent group-hover:scale-125 transition"></span>
+                <h3 class="text-xl font-bold text-white">Lead Systems Architect</h3>
+                <p class="text-sm font-mono text-accent mb-2">Independent Deployments | Present</p>
+                <p class="text-muted">Engineering scalable generative AI environments and multi-agent platforms. Overseeing the full lifecycle from raw compute provisioning to Next.js frontend deployments.</p>
+            </div>
+
+            <div class="relative group">
+                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darker bg-accent group-hover:scale-125 transition"></span>
+                <h3 class="text-xl font-bold text-white">Aspire Leaders Program Fellow</h3>
+                <p class="text-sm font-mono text-accent mb-2">Aspire Institute (Harvard Faculty Founded) | Oct 2026 – Nov 2026</p>
+                <p class="text-muted">Selected for a fully-funded global leadership cohort. Collaborating with international peers and Ivy League faculty on organizational strategy, cross-border systems scaling, and executive decision-making.</p>
+            </div>
+
+            <div class="relative group">
+                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darker bg-white/20 group-hover:bg-accent transition"></span>
+                <h3 class="text-xl font-bold text-white">Computer Engineering Cohort</h3>
+                <p class="text-sm font-mono text-white/50 mb-2">United States Academia | Incoming</p>
+                <p class="text-muted">Transitioning to advanced hardware-software interfacing and low-level systems logic, bridging the gap between algorithmic theory and silicon execution.</p>
+            </div>
+
+            <div class="relative group">
+                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darker bg-white/20 group-hover:bg-accent transition"></span>
+                <h3 class="text-xl font-bold text-white">Quantitative Data Analyst</h3>
+                <p class="text-sm font-mono text-white/50 mb-2">Academic Core | 2024 - Present</p>
+                <p class="text-muted">Deep academic focus on high-dimensional data processing, statistical modeling, and machine learning infrastructures (TensorFlow, PyTorch, Pandas).</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Proprietary IP (Projects) -->
+    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto bg-darker border-t border-white/5 reveal-section">
+        <h2 class="text-3xl font-bold mb-12">Proprietary IP <span class="text-muted font-normal text-lg ml-2">(Public Deployments)</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300 reveal-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">NEXGEN Mentor</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://nexgenmentor.netlify.app/" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">Multi-agent AI orchestration architecture for advanced mentorship and automated career trajectory mapping.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">AI Orchestration</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">LLM APIs</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300 reveal-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Fitzone AI</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://fitzoneai.netlify.app" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">Scalable generative AI fitness architecture for dynamic, programmatic health routine generation.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Gen-AI</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Netlify</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300 reveal-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">3D Browser Engine</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://nfs-labyrinth.netlify.app" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Hassananwaz/nfs-labyrinth" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">Performance-optimized, browser-based 3D automotive rendering engine and interactive game environment.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Three.js</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">WebGL</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300 reveal-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">VU LMS Enterprise Clone</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://hassananwaz.github.io/VU-Pakistan-LMS-clone/" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Hassananwaz/VU-Pakistan-LMS-clone" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">Full-scale front-end architectural clone of the Virtual University LMS, built for modular scalability.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">HTML5/CSS3</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">DOM Logic</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300 reveal-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Premium Culinary Architecture</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://hassananwaz.github.io/Landing-page-Of-a-Resturaunt/" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Hassananwaz/Landing-page-Of-a-Resturaunt" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">High-performance front-end landing page engineered for fine-dining establishments, featuring modular CSS.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Vanilla JS</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Responsive UI</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Roast My Site</h3>
+                    <div class="flex space-x-3">
+                        <a href="#" target="_blank" title="Live Site" class="text-muted hover:text-accent transition"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" target="_blank" title="Source Code" class="text-muted hover:text-white transition"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                </div>
+                <p class="text-sm text-muted mb-6">Automated web application feedback tool leveraging Google Antigravity to parse and critique DOM structures.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Data Parsing</span>
+                    <span class="px-2 py-1 bg-white/5 rounded text-accent">Antigravity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Arsenal -->
+    <section id="stack" class="py-24 bg-dark px-6 border-t border-white/5 reveal-section">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Infrastructure & Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-muted font-mono text-sm">
+                <div class="reveal-card">
+                    <h4 class="text-white font-sans font-bold mb-4 border-b border-white/10 pb-2">AI & Machine Learning</h4>
+                    <ul class="space-y-3">
+                        <li>LLM Orchestration (LangChain)</li>
+                        <li>TensorFlow / PyTorch</li>
+                        <li>Predictive Modeling</li>
+                        <li>NLP & Generative AI</li>
+                    </ul>
+                </div>
+                <div class="reveal-card">
+                    <h4 class="text-white font-sans font-bold mb-4 border-b border-white/10 pb-2">Data Science & BI</h4>
+                    <ul class="space-y-3">
+                        <li>Enterprise BI (Power BI/Tableau)</li>
+                        <li>Pandas, NumPy, Matplotlib</li>
+                        <li>High-Dimensional Analytics</li>
+                        <li>ETL & Big Data Pipelines</li>
+                    </ul>
+                </div>
+                <div class="reveal-card">
+                    <h4 class="text-white font-sans font-bold mb-4 border-b border-white/10 pb-2">Cloud Computing</h4>
+                    <ul class="space-y-3">
+                        <li>AWS (EC2, S3, VPC, IAM)</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>Google Cloud Platform (GCP)</li>
+                        <li>Firebase & Netlify Edge</li>
+                    </ul>
+                </div>
+                <div class="reveal-card">
+                    <h4 class="text-white font-sans font-bold mb-4 border-b border-white/10 pb-2">Core Engineering</h4>
+                    <ul class="space-y-3">
+                        <li>Python, C++, JavaScript</li>
+                        <li>React / Three.js / HTML / CSS</li>
+                        <li>SQL / Local Servers</li>
+                        <li>WordPress & Adsterra</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Off-Screen Pursuits (Hobbies & Leadership) -->
+    <section id="pursuits" class="py-24 bg-darker px-6 border-t border-white/5 reveal-section">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Off-Screen Pursuits <span class="text-muted font-normal text-lg ml-2">(Leadership & Interests)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Interest 1: Mechanics -->
+                <div class="glass-panel p-6 rounded-xl hover:border-accent transition duration-300 reveal-card">
+                    <i class="fas fa-motorcycle text-3xl text-accent mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Mechanical Aesthetics</h3>
+                    <p class="text-sm text-muted leading-relaxed">Analyzing motorcycle mechanics and performance engineering, with a specific focus on the design language of naked and sports classifications like CFMOTO, Benelli, and the CB650R.</p>
+                </div>
+                
+                <!-- Interest 2: Systems Literature / Culinary -->
+                <div class="glass-panel p-6 rounded-xl hover:border-accent transition duration-300 reveal-card">
+                    <i class="fas fa-layer-group text-3xl text-accent mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Behavioral & Natural Architecture</h3>
+                    <p class="text-sm text-muted leading-relaxed">Studying structural literature (e.g., <em>Atomic Habits</em>, <em>The One-Straw Revolution</em>) to apply behavioral psychology and sustainable methods to personal scaling and culinary experimentation.</p>
+                </div>
+
+                <!-- Interest 3: Content Leadership -->
+                <div class="glass-panel p-6 rounded-xl hover:border-accent transition duration-300 reveal-card">
+                    <i class="fas fa-film text-3xl text-accent mb-6 block"></i>
+                    <h3 class="text-xl font-bold mb-3">Content Strategy & Blueprinting</h3>
+                    <p class="text-sm text-muted leading-relaxed">Directing visual prompts and digital content strategies. I approach cinematography, video shoots, and storytelling purely as strategic blueprints for future creative execution rather than active physical production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Socials -->
+    <footer id="contact" class="py-12 bg-dark px-6 text-center border-t border-white/5 reveal-section">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-6">Distribution Network</h2>
+            <div class="flex space-x-6 mb-8 text-2xl text-muted">
+                <a href="https://www.linkedin.com/in/hassananwaz/" target="_blank" class="hover:text-accent transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/hassananwaz" target="_blank" class="hover:text-accent transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/hassannawazzz?mdxt=MWJubXUemFlaHdyeQ==" target="_blank" class="hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:mrhno830@gmail.com" class="hover:text-accent transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-xs text-white/30 font-mono">© 2026 Hassan Nawaz. Scaled with exhaustion.</p>
+        </div>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.reveal-nav', { delay: 100, distance: '20px', origin: 'top', interval: 100 });
+        ScrollReveal().reveal('.reveal-hero', { delay: 300, distance: '40px', origin: 'bottom', duration: 1000 });
+        ScrollReveal().reveal('.reveal-hero-img', { delay: 500, distance: '40px', origin: 'right', duration: 1000 });
+        ScrollReveal().reveal('.reveal-section', { delay: 200, distance: '30px', origin: 'bottom', duration: 800, viewFactor: 0.2 });
+        ScrollReveal().reveal('.reveal-card', { delay: 200, distance: '30px', origin: 'bottom', interval: 150 });
+    </script>
+
+</body>
+</html>
